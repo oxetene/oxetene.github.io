@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<title>ToeOS - Beautiful, Fast, Minimal</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class="center">
+		<nav>
+			<a href="index.html">Home</a>
+			|
+			<a href="manual.html">Manual</a>
+			|
+			<a href="https://github.com/oxetene/toe-install">Git</a>
+			<span class="right">
+				<a href="donate.html">Donate</a>
+			</span>
+		</nav>
+		<main>
+			<br>
+			<p>Installation:</p>
+			<p>1. Preparing the environment</p>
+			<p>ToeOS can be installed from a virtually any existing Linux installation (including the live environments) as long as it contains the following dependencies:</p>
+			<p>`wget tar make gcc...`</p>
+			<p>We recommend distributions that are already using musl libc, as compiling the packages that way is going to make them smaller.</p>
+			<p>2. Partitioning the disks</p>
+			<p>Pick your favourite disk-partitioning tool, create a root partition for your fresh ToeOS install and create any other partitions you might need.</p>
+			<p>It is possible to install ToeOS to a directory on your system, if you that is what you want then the second step can be skipped.</p>
+			<p>3. Running the installation script</p>
+			<p>Run the following command in a directory on your host system:</p>
+			<p>`git clone ...`</p>
+			<p>Then move to the created directory and edit the installation script to your liking. The main things you might want to change are the keyboard layout, timezone and most importantly, the fstab file. After that you can begin the installation by running the script.</p>
+			<p>4. Finishing up</p>
+			<p>The amount of time it takes to build ToeOS depends on your hardware, when it is finished you can boot into the newly installed system. As long as you are on a wired connection you should be able to connect to the internet and manually build anything you want.</p>
+
+		</main>
+	</body>
+</html>

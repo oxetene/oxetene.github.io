@@ -1,0 +1,25 @@
+body {
+	color: #c5c8c6;
+	background-color: #1d1f21;
+	font-family: monospace; 
+}
+nav {
+	background-color: #373b41;
+	overflow: hidden;
+	padding: 5px;
+}
+main {
+	background-color: #282a2e;
+	padding: 10px;
+}
+a {
+	color: #81a2be;
+	text-decoration: none;
+}
+.center {
+	margin: auto;
+	width: 50em;
+}
+.right {
+	float: right;
+}
