@@ -6,11 +6,11 @@ body {
 nav {
 	background-color: #373b41;
 	overflow: hidden;
-	padding: 5px;
+	padding: 8px;
 }
 main {
 	background-color: #282a2e;
-	padding: 15px;
+	padding: 16px;
 }
 a {
 	color: #81a2be;
@@ -18,7 +18,7 @@ a {
 }
 .center {
 	margin: auto;
-	width: 50em;
+	width: 48em;
 }
 .right {
 	float: right;
