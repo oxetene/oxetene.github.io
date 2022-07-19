@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width">
-		<title>ToeOS - Wiggle your toes</title>
+		<title>${title}</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body class="center">
@@ -18,24 +18,23 @@
 			</span>
 		</nav>
 		<main>
-<br>
-<p>1. Running the installation script</p>
-<p>Run the following command in a directory on your host system:</p>
-<p>`git clone https://github.com/oxetene/toeos`</p>
-<p>Then move to the created directory and edit the installation scripts to your liking. For example, you may want to add custom scripts to install additional software (just make sure to compile them statically). We also highly recommend you to edit the kernel config as it is so minimal that by default it doesn't include any non-essential device drivers.</p>
-<p>Since there is no installation media you will have to use an existing Linux installation to partition the disks and run the ToeOS installation scripts. ToeOS can be installed from a virtually any existing Linux installation (including the live environments) as long as it contains the following dependencies:</p>
-<p>`bc bison flex gcc git libelf make tar wget`</p>
-<p>After that you can begin the installation by running the install script.</p>
-<p>2. Preparing the kernel (and yourself)</p>
-<p>If you only wish to run ToeOS inside of a virtual machine, you can stop here, move to the system directory and run:
-<p>`qemu-system-x86_64 -kernel linux -initrd initrd.img`</p>
-<p>After waiting for a very short time to boot into your beautiful ToeOS install, you can start wondering why network support isn't compiled into the kernel. Now, if you're brave enough to install ToeOS on hardware, add EFISTUB support to your kernel and proceed to the next step.</p>
-<p>3. Partitioning the disks</p>
-<p>Pick your favourite disk-partitioning tool and create an EFI system partition for your fresh ToeOS install. Then format the newly created partition to FAT32, mount it and move the contents of the system directory to the mount point. Restart your computer and boot into the EFI shell. You can run ToeOS by changing your directory to the EFI partition (probably with `FS0:`) and running:</p>
-<p>`\linux initrd=\initrd.img rw`</p>
-<p>4. Finishing up</p>
-<p>Admire your systen, gaze upon it and enjoy your machine being 100% RCE-proof.</p>
-
+			<br>
+			<p>1. Running the installation script</p>
+			<p>Run the following command in a directory on your host system:</p>
+			<p>`git clone https://github.com/oxetene/toeos`</p>
+			<p>Then move to the created directory and edit the installation scripts to your liking. For example, you may want to add custom scripts to install additional software (just make sure to compile them statically). We also highly recommend you to edit the kernel config as it is so minimal that by default it doesn't include any non-essential device drivers.</p>
+			<p>Since there is no installation media you will have to use an existing Linux installation to partition the disks and run the ToeOS installation scripts. ToeOS can be installed from a virtually any existing Linux installation (including the live environments) as long as it contains the following dependencies:</p>
+			<p>`bc bison flex gcc git libelf make tar wget`</p>
+			<p>After that you can begin the installation by running the install script.</p>
+			<p>2. Preparing the kernel (and yourself)</p>
+			<p>If you only wish to run ToeOS inside of a virtual machine, you can stop here, move to the system directory and run:
+			<p>`qemu-system-x86_64 -kernel linux -initrd initrd.img`</p>
+			<p>After waiting for a very short time to boot into your beautiful ToeOS install, you can start wondering why network support isn't compiled into the kernel. Now, if you're brave enough to install ToeOS on hardware, add EFISTUB support to your kernel and proceed to the next step.</p>
+			<p>3. Partitioning the disks</p>
+			<p>Pick your favourite disk-partitioning tool and create an EFI system partition for your fresh ToeOS install. Then format the newly created partition to FAT32, mount it and move the contents of the system directory to the mount point. Restart your computer and boot into the EFI shell. You can run ToeOS by changing your directory to the EFI partition (probably with `FS0:`) and running:</p>
+			<p>`\linux initrd=\initrd.img rw`</p>
+			<p>4. Finishing up</p>
+			<p>Admire your systen, gaze upon it and enjoy your machine being 100% RCE-proof.</p>
 		</main>
 	</body>
 </html>
